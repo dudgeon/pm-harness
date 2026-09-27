@@ -83,6 +83,19 @@ Format:
 - revisit if: the scaffold changes enough to warrant v2
 - from: Q-002
 
+### DEC-005: Evolving the scaffold is goal 002, and each version gets a snapshot
+- status: active
+- date: 2026-09-27 · decided by: Geoff
+- scope: project
+- decision: Goal 002 owns the evolution of project-scaffold-v1. Each version is saved as a
+  snapshot: a markdown file describing its artifacts, linked to a commit. v1 is commit `a6f5199`
+  (tag `project-scaffold-v1`).
+- basis:
+  - grounded: Geoff's direction on 2026-09-27
+- alternatives considered: no dedicated goal (evolving it informally)
+- revisit if: the scaffold moves out of this repo
+- from: Q-003
+
 ## Hypotheses
 
 Format:

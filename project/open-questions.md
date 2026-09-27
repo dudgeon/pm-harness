@@ -24,14 +24,14 @@ Format:
 - raised: 2026-09-27
 - notes: This shapes D1 and the eventual runtime choice (C1 is only a v0 default).
 
+## Resolved
+
 ### Q-003: Should evolving project-scaffold-v1 be its own goal?
-- status: open
+- status: resolved
 - blocking: no
 - between: DEC-003 ↔ (goal list)
 - raised: 2026-09-27
-- notes: This is a likely candidate for goal 002. Split out from Q-002.
-
-## Resolved
+- resolution: DEC-005, which creates goal 002.
 
 ### Q-002: What is the scaffold called?
 - status: resolved

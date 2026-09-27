@@ -9,3 +9,9 @@ _Last rolled up: 2026-09-27_
 - [ ] Sharpen goal 001 with the user (success criteria, time box)
 - [ ] List candidate harness designs →001-D1
 - [ ] Define evaluation criteria for comparing the designs →001-D2
+
+## 002 · Evolve project-scaffold-v1 (draft)
+
+- [x] Snapshot project-scaffold-v1 →002-D1
+- [ ] Sharpen goal 002 with the user (version-bump criteria, where the scaffold lives)
+- [ ] Review `scaffold-friction` inbox notes as they accumulate
