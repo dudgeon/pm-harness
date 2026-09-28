@@ -4,14 +4,98 @@
 
 _Last rolled up: 2026-09-27_
 
+## 004 · Beacon teardowns (active)
+
+- [x] First-pass scan of public beacons →004-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md)
+- [x] Capture Ramp's primary Glass article. Recovered 2026-09-27 through a public X mirror (S2); the full text is kept locally →004-D2
+- [x] Transcribe and digest the Ramp CPO's talk (captions plus slides from the video) →004-D2 src:[talk digest](context/inbox/_processed/2026-09-27-ramp-cpo-talk.md)
+- [x] Deep teardown, Ramp v1: a vision plus eight PRDs (Glass, VOTC, Ramp Research, Inspect, Review Buddy, Testo, Gadget, the autonomous loop) →004-D2 src:[teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md)
+- [x] Ramp round 2: go deep on Glass and test Geoff's hypothesis that Glass is where most intent shaping happens (verdict: partly supported). X timelines, about fifteen talks and interviews, job postings, screenshots, and a frame-by-frame read of the product-shaping skill; Glass PRD v2 →004-D2 src:[intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md)
+- [ ] Review the Ramp teardown with Geoff. Are this fidelity and format right for the other beacons? @Geoff →004-D2
+- [ ] Close the open questions in the Ramp PRDs as new public material appears. Examples: what "automatically handled" means, Testo's data handling, who owns Glass now, what platform Gadget runs on, what's in Dojo's Product kit, and whether Glass converges with Claude's own apps. Also watch for a recording of Ramp's design-tooling demo (S83) →004-D2 src:[teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md)
+- [ ] If Geoff has access, read the paywalled Pragmatic Engineer piece on Inspect (S19). The product-shaping skill no longer needs the paywalled post: it was read in full from the video frames (S55) @Geoff →004-D2
+- [ ] Verify and profile the companies in the earlier research note's scorecard, regulated ones first: Coinbase Wallet (a plan contract with acceptance criteria) and Monzo (Agent Chip). Then Stripe (the note has a detailed section to check), Shopify, Block, Spotify, Uber, OpenAI's harness team, Cloudflare, and AWS AI-DLC →004-D1 src:[earlier research note](context/inbox/_processed/2026-09-20-pm-idea-to-code-stripe-ramp.md)
+- [ ] Deep teardown: LinkedIn (Full Stack Builder agents, CAPT) →004-D2
+- [ ] Deep teardown: Citi (Arc). Verify the weakly sourced claims first →004-D2
+- [ ] Deep teardown: AWS (AI-DLC, Kiro) →004-D2
+- [ ] Deep teardown: Atlassian (Rovo, Teamwork Graph) →004-D2
+- [ ] Profile the beacons the scan noted but didn't profile (Productboard Spark, Morgan Stanley's DevGen.AI, other banks' agent programs, and the rest of its gaps list) →004-D1
+- [ ] Synthesize what transfers to a regulated enterprise →004-D3
+
 ## 001 · Harness design R&D (draft)
 
 - [ ] Sharpen goal 001 with the user (success criteria, time box)
 - [ ] List candidate harness designs →001-D1
 - [ ] Define evaluation criteria for comparing the designs →001-D2
+- [ ] Turn Q-006's candidate criteria into a scoring method for first moves →001-D2
+- [ ] Consider the teams piloting SDD as candidate early users of spec-shaping moves, since they need well-defined specs most (Q-006, Q-008) →001-D1 src:Geoff 2026-09-27
+- [ ] Consider Ramp's path as evidence for the stop sequence: near-universal individual AI adoption, then "stuck," then a shared harness →001-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider that SDD tooling is moving into PM shaping (Spec Kit's idea assessment), and whether to adopt or build for shaping moves →001-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider the scan's biggest gap: there's no public case of a shared PM agent driving PM moves end to end in a regulated enterprise →001-D2 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider Ramp's "factory" as a candidate design shape: one agent per bottleneck on a shared formal record, plus a general coworker. Weigh it against a single PM agent (Q-016) →001-D1 src:[Ramp teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md) from:004
+- [ ] Consider sequencing by bottleneck ("find that one bottleneck that you think can 10x your company") as a meta-criterion for first moves. Ramp's first moves were context-bound Q&A (Q-006) →001-D2 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
+- [ ] Consider Glass as a worked example of the hybrid stop (local, with shared skills), including its gaps: memory stays per-user, and no traces are captured centrally (H-009) →001-D1 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
+- [ ] Consider Ramp's intent-shaping relay (discovery in VOTC, framing in Glass or Claude Code with a portable skill, the prototype in Inspect, the record in Notion) when deciding where our harness holds the brief. Ramp hasn't given the brief a governed home (Q-016, H-002) →001-D1 src:[intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md) from:004
+- [ ] Consider Glass's control surface as a design input: per-tool Auto/Allow/Ask modes, a memory approval queue, and the gap Ramp names itself (local agents inherit the user's identity) (Q-014) →001-D1 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
 
 ## 002 · Evolve project-scaffold-v1 (draft)
 
 - [x] Snapshot project-scaffold-v1 →002-D1
 - [ ] Sharpen goal 002 with the user (version-bump criteria, where the scaffold lives)
 - [ ] Review `scaffold-friction` inbox notes as they accumulate
+- [ ] Consider a tier for context that can't live in the repo (confidential priors, evidence) src:[friction](goals/002-project-scaffold/context/friction.md)
+- [ ] Consider separating research questions from tensions in `open-questions.md` src:[friction](goals/002-project-scaffold/context/friction.md)
+- [ ] Consider a home for project-level follow-ups, e.g. the deferred vision rewrite src:[friction](goals/002-project-scaffold/context/friction.md)
+- [ ] Track H-013 while running this project: how often Geoff edits structure directly vs. the agent filing it, and how often the agent misfiles src:H-013
+
+## 003 · PM moves taxonomy (draft)
+
+- [ ] Survey industry frameworks for PM moves and extract candidate moves (Pragmatic Institute, SVPG's operating model, Shape Up, continuous discovery, jobs-to-be-done, SAFe's PM/PO roles) →003-D1
+- [ ] Draft taxonomy v0 from best practice and Geoff's proto-map, then review it with Geoff →003-D1
+- [ ] Turn the draft annotation schema into something usable →003-D2 src:[pm-moves](context/wiki/pm-moves.md)
+- [ ] Consider Spec Kit's idea-assessment stages (intake, research, define, shape, decide) and AWS AI-DLC's intent → requirements → units of work as outside breakdowns of shaping →003-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider which PM moves beacons automate first (LinkedIn's trust, growth, research, and analyst agents; Atlassian's PRD, theme, and customer agents) →003-D2 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider Ramp's five-step loop (identify, define, build, coordinate, improve) as an outside breakdown of PM moves. It makes coordination (status, Q&A, launch communications) a step of its own, and treats acceptance testing as something to automate →003-D1 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
+- [ ] Consider Ramp's "next contract" for the shaping and handoff moves (Q-008): evidence, requirements written for agents (in a human version and an agent version), and a working prototype. Also consider its conversational product-shaping skill. Its full structure is now in the Glass PRD, part B: seven framing questions, a one-sentence gate, research streams the PM picks, an evidence bar, requirement IDs, closed questions, and a seven-section spec →003-D2 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
+- [ ] Consider Ramp Labs' bottom-up method (traces split into work items with one objective and one outcome each, then clustered into 30 categories) as a way to derive moves from observed work (Q-004) →003-D1 src:[Ramp sources](goals/004-beacon-teardowns/teardowns/ramp/sources.md) from:004
+
+## 005 · Effort and delegation baseline (draft)
+
+- [ ] Review published studies of how PMs spend their time →005-D1
+- [ ] Interview Geoff on where PM effort goes, and write it up generically →005-D2
+- [ ] Draft an interview or survey guide keyed to the taxonomy, once taxonomy v0 (003-D1) exists →005-D2
+- [ ] Consider Anthropic's trace-based measures (auto-approval, interruptions, turn duration) and Feng et al.'s autonomy levels as the basis for measuring delegation →005-D3 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider that vendor dashboards track adoption and cost, not fluency or delegation, as a gap our framework could fill →005-D3 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider Ramp's self-reported step measures: 85% of PM questions answered by AI, 60% of UX issues fixed within 24 hours, "fewest human touches per safely merged PR," and the share of PRs from agents and from non-engineers. Also note how its metric definitions drift →005-D3 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
+- [ ] Consider Ramp's L0–L3 AI-proficiency levels and usage leaderboard as a fluency measure, and why a mandated leaderboard fails our earned-adoption test (C6, Q-013) →005-D3 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
+- [ ] Consider Glass's adoption telemetry (weekly users, sessions, and "user actions"; spend per skill) and Ramp Labs' attribution of spend to work items as measurement designs (Q-010, H-005) →005-D3 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
+
+## 006 · Context ecosystem and data structure (draft)
+
+- [ ] Map the options for where context lives (federated, curated, or hybrid) and their tradeoffs →006-D1
+- [ ] Analyze how opinionated the data structure should be, and which entities should be canonical, starting from the working notes →006-D2 src:[data-model](context/wiki/data-model.md)
+- [ ] Analyze product vs. project as the primary unit →006-D2 src:[data-model](context/wiki/data-model.md)
+- [ ] Draft a generic controls map (classification, access, audit, records, model risk, human accountability) →006-D3
+- [ ] Consider the pattern of versioned, reviewed skill files (Ramp's Dojo, LinkedIn's CAPT, Tessl, AWS steering files, Spec Kit's constitution) →006-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider Ramp's automatic 24-hour memory synthesis against the human-validated loop in DEC-011. Primary sources (2026-09-27) change the picture: memory is written once and the agent only reads it, it lives in files the user can inspect, and in v2 users review suggestions. Round 2 adds more: a memory agent proposes entries into an Approve/Dismiss queue, sorted into fixed categories, alongside team and per-project memory →006-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
+- [ ] Consider Ramp's two human-validated context loops as working designs for DEC-011's loop: product-Q&A answers marked by experts, with a nightly sweep into the docs; and Ramp Research's tests over the context layer instead of per-answer review →006-D1 src:[Ramp teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md) from:004
+- [ ] Consider "make the organization legible to agents" as a design principle: one formal record, status and decisions published by default, "every question is an API" →006-D1 src:[Gadget PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-gadget.md) from:004
+- [ ] Consider Ramp's split on traces (Inspect traces everything; Glass traces nothing) when designing trace capture (H-005, H-009) →006-D1 src:[Ramp teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md) from:004
+- [ ] Draft the controls map with the Ramp practices that would collide with typical controls in mind: production data in test, "automatically handled" review, sessions public by default, agents posting as the user. Also include the Ramp practices worth borrowing: per-tool permission modes, agent identities with scope capped at the sponsor's and expiry by default, and shadow mode with exposure budgets for risk agents →006-D3 src:[Ramp teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md) from:004
+- [ ] Consider Atlassian's Teamwork Graph (keeps source permissions; open to outside agents through MCP) as a context layer the enterprise may already have →006-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider LinkedIn's write-back of learnings into InfoSec-reviewed playbooks as a working context-building loop →006-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
+- [ ] Consider what running this project on the scaffold teaches about Q-015 →006-D2 src:[friction log](goals/002-project-scaffold/context/friction.md) from:002
+- [ ] Consider skill sprawl when designing curation. Glass reached about 800 overlapping skills in three months, and Ramp's own ablation on another product found most skills neutral or harmful →006-D1 src:[Ramp sources](goals/004-beacon-teardowns/teardowns/ramp/sources.md) from:004
+
+## Summary
+
+| Goal | Status | Open | Done |
+|---|---|---|---|
+| 004 · Beacon teardowns | active | 10 | 5 |
+| 001 · Harness design R&D | draft | 13 | 0 |
+| 002 · Evolve project-scaffold-v1 | draft | 6 | 1 |
+| 003 · PM moves taxonomy | draft | 8 | 0 |
+| 005 · Effort and delegation baseline | draft | 8 | 0 |
+| 006 · Context ecosystem and data structure | draft | 14 | 0 |
+
+**Blocked tasks:** none.
