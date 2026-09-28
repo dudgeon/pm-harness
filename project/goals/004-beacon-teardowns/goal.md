@@ -3,7 +3,7 @@ id: 004
 title: Beacon teardowns
 status: active
 created: 2026-09-27
-updated: 2026-09-27
+updated: 2026-09-28
 ladders_to: [D5, D2]
 ---
 
@@ -18,18 +18,30 @@ ourselves. This goal answers Q-009.
 Geoff wants a high-fidelity read of each prioritized beacon: "basically a full complement of PRDs
 for the main features and product vision for the overall product" (chat, 2026-09-27).
 
+**Second pass (2026-09-28).** Geoff asked to widen the research, then prioritize the next round:
+- companies touting agentic delivery: Stripe, Block, Coinbase, Atlassian, Shopify, Meta, Uber,
+  Airbnb, Box, and others the research turned up
+- PM-focused agents, and coding agents with intent-definition features
+- Lenny's ecosystem
+
+The [landscape](landscape.md) sorts beacons into five kinds: internal factories, regulated programs,
+PM-facing agent products, intent-definition tools and methods, and commentators. It ranks the next
+round in three tiers, and names the gaps no beacon fills yet (H-014).
+
 ## Definition of done
-For each prioritized beacon, a teardown that reconstructs its product as PM artifacts:
-- a **product vision** for the whole
-- a **PRD for each main feature**
+For each prioritized beacon, a teardown at the depth its tier calls for (R9):
+- **Tier 1**, a full teardown: a **product vision** for the whole, plus a **PRD for each main
+  feature**.
+- **Tier 2**, a focused teardown: a few PRDs, or a controls note.
+- **Tier 3**, a one-page profile.
 
 Each should be as close to the real thing as public sources allow. Each teardown must also:
 - cite every claim and label it (said / observed / inferred)
 - read its subject through the common lens (R3)
 - say what transfers (R4)
 
-The goal also delivers a synthesis across beacons (004-D3). The goal is done when the prioritized
-teardowns and the synthesis exist and Geoff has reviewed them. Ramp came first and sets the
+The goal also delivers a synthesis across beacons (004-D3). The goal is done when the tier 1 and
+tier 2 teardowns, the tier 3 profiles, and the synthesis exist and Geoff has reviewed them. Ramp came first and sets the
 template ([teardowns/ramp](teardowns/ramp/index.md)).
 
 ## Requirements
@@ -49,6 +61,15 @@ template ([teardowns/ramp](teardowns/ramp/index.md)).
     leads to follow up.
   - Third-party material goes into the public repo only as digests with short quotes and links.
   - Full texts and transcripts stay local, in `context/inbox/_local/`, which git ignores.
+- R8: For every company, check its engineering blog **and** the public posts of its CEO, CPO, CTO,
+  and other senior product and engineering leaders, on X or LinkedIn. Leaders' posts often reveal
+  practice before the blogs do. Log each profile checked, even when it turns up nothing (Geoff,
+  2026-09-28).
+- R9: Scale the depth to the tier. Full teardowns go to tier 1; tier 2 gets focused teardowns and
+  tier 3 one-page profiles. The tiers live in the [landscape](landscape.md) and get revisited after
+  each round.
+- R10: Keep the enterprise generic (C5). Beacon lists stay cross-industry, and relevance is argued
+  from regulation in general, never from one industry.
 
 ## Constraints
 - GC1: Publicly available information only (Geoff, thesis note).
@@ -67,8 +88,12 @@ template ([teardowns/ramp](teardowns/ramp/index.md)).
 
 ## Open
 - How many teardowns are enough?
-- Which beacons come after the first five?
-- Should the other deep teardowns get Ramp's full treatment (vision plus PRDs), or a lighter version
-  scaled to the evidence? (Ramp had unusually rich public material.)
+  - Proposed (2026-09-28): three full teardowns (Coinbase, Uber, AWS), six focused ones, and about
+    fifteen profiles.
+  - Revisit after tier 1.
+- ~~Which beacons come after the first five?~~ Answered by the [landscape](landscape.md)
+  (2026-09-28).
+- ~~Should the other deep teardowns get Ramp's full treatment?~~ Answered by R9: depth follows the
+  tier.
 - Beacons' tools have "a shelf life of weeks" (Ramp, S14 in the teardown). How do we keep
   teardowns current, and when does one count as stale?

@@ -10,7 +10,7 @@
 > shaping skill. See [intent-shaping](intent-shaping.md) and the v2 [Glass PRD](prd-glass.md).
 >
 > **Where it comes from.** The first source is Ramp CPO Geoff Charles's talk at the Lenny & Friends
-> Summit (S1, 2026-09-10), with its slides read from the video frames. The rest comes from 85 other
+> Summit (S1, 2026-09-10), with its slides read from the video frames. The rest comes from 93 other
 > sources ([sources](sources.md)), all public except one earlier research note of ours (S56). Almost
 > everything is **Ramp's own account**. Independent observation is thin (see "Evidence").
 >
@@ -20,7 +20,7 @@
 
 - **Labels.** Every requirement is marked **said** (Ramp's account), **observed** (a third party
   or a public artifact), or **inferred** (our reconstruction).
-- **Citations.** Sources are keyed S1–S86. Bare timestamps point into the talk (S1).
+- **Citations.** Sources are keyed S1–S94. Bare timestamps point into the talk (S1).
 - **What each PRD covers.** Every PRD follows the same shape:
   - problem, users and jobs, measures, requirements, how it works, architecture
   - open questions
@@ -41,7 +41,7 @@
 | [Testo](prd-testo.md) | The browser QA agent | build: test (acceptance) |
 | [Gadget](prd-gadget.md) | The coordination agent: "every question is an API" | coordinate |
 | [Autonomous loop](prd-autonomous-loop.md) | End-to-end fixes for small issues | improve |
-| [sources](sources.md) | The source register (S1–S86) | — |
+| [sources](sources.md) | The source register (S1–S94) | — |
 
 ## What Ramp built, in brief
 

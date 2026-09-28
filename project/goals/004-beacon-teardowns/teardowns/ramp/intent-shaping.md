@@ -42,7 +42,10 @@ shaping loop, and all of its durable output, lives elsewhere.**
   - The one skill shown in public ran in Claude Code and Cursor (S55).
   - The same skill bundles run in both Glass and Inspect (S66).
 - **Research recruiting runs through Inspect** (S61). Research-plan assistants are "in Slack,
-  slash in Notion… fairly chaotic" (S61).
+  slash in Notion… fairly chaotic" (S61). By June, design had its own shaping agents outside
+  Glass: a research-plan partner that also coaches interviewers, per-designer Slack bots that build
+  v1 prototypes from meeting notes, and a prototype playground anyone can fork (S54, @diegozaks,
+  2026-06-05).
 - **Prototypes are built in Inspect.**
   - That's where specs are turning into "working branches" (S51).
   - That's where PMs collaborate (S53).
@@ -98,6 +101,7 @@ public.
 | 2026-06-04 | VP Growth: "I use Glass for everything now… still Claude Code under the hood" | For GTM leaders, Glass is the main surface | 1P | S65 |
 | 2026-06-04 | "Every single Product designer… running multiple agents… spinning up prototypes, shipping code… Glass… is adopted by 99% of employees" | Designers prototype through agents; Glass is universal | 1P | S54 (@diegozaks) |
 | Jun 2026 | Ramp Research is "a skill bundle… in Inspect… in Glass." Glass is "provider agnostic" | The method is portable across harnesses | 1P | S66 |
+| 2026-06-05 | Head of design lists design's agents: a research-plan partner that coaches interviewers, per-designer Slack bots that build v1 prototypes from meeting notes, a forkable prototype playground, and Inspect for changes through code review | More of the shaping loop lives outside Glass | 1P | S54 (@diegozaks) |
 | 2026-06-08 | Glass's lead leaves Ramp | Continuity risk for Glass | 1P | S54 (@sebgoddijn); S39 |
 | 2026-06-18 | Ramp's employees "log in to Claude on day one already connected — 2,000 employees" | Claude's own apps are a company-wide surface too | Vendor | S75 |
 | 2026-06-19 | Inspect is "as close as we can to 'just works' on any knowledge work tasks at ramp - eng, product, data, support, sales, uxr" | Inspect's scope reaches product work and user research | 1P | S54 (@rahulgs) |
@@ -141,6 +145,10 @@ Tracked as open questions in the [Glass PRD](prd-glass.md#open-questions).
    - The gap: it stops at "specific enough to prototype." At Ramp, acceptance criteria show up
      later, at the Inspect session boundary. Its docs ask each session for "acceptance criteria
      that define success" (S20). A regulated setting needs them in the spec itself.
+   - The tools have moved past Ramp here. The second-pass survey (2026-09-28) found that most
+     spec-driven tools now require acceptance criteria before build: EARS statements in Kiro,
+     Given/When/Then in Spec Kit, and a "decision complete" plan with tests in Codex. That makes
+     Ramp's exit bar the outlier ([landscape](../../landscape.md)).
 4. **Keep the brief, the evidence, and the prototype together in one governed, shared place.**
    - Ramp hasn't done this yet:
      - A designer calls the missing "source of truth for the project" a blocker (S62).

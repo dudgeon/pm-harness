@@ -66,6 +66,16 @@ self-reported unless marked otherwise.
   and prototypes are Inspect sessions. A Ramp designer calls the missing project "source of truth"
   a blocker. That's a gap a shared context layer could fill
   ([intent-shaping](../../goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md)).
+- **Standards and expert knowledge as governed context** (second pass, [landscape](../../goals/004-beacon-teardowns/landscape.md)):
+  - *Cloudflare* writes standards like RFCs, with named owners, stable IDs, and a lifecycle from
+    approved to enforced. An AI reviewer enforces them on every merge request. Compliance teams now
+    add standards too.
+  - *Meta's Organizational Second Brain* turns expert corrections into reviewed diffs to its
+    knowledge files, and each one joins a regression suite.
+  - *Box* gates retrieval by article metadata, and a weekly review of unresolved requests feeds
+    human-reviewed fixes.
+  - *Answers banked in the spec, with dates:* Spec Kit's clarification log, BMAD's typed decision
+    log, and AI-DLC's question files. None records who had the authority to answer (H-014).
 - **The organization is made legible to agents.** Ramp consolidates work into one formal record
   and answers questions from it: "every question is an API." Answers from humans get fed back
   ([Gadget PRD](../../goals/004-beacon-teardowns/teardowns/ramp/prd-gadget.md)).

@@ -10,6 +10,10 @@
 > the scan's claims about Ramp were corrected: Glass runs on the Claude Agent SDK; the Inspect
 > post's date and quotes; the token-spend post; Ramp Research's status. The index's "Evidence and
 > gaps" section lists the corrections.
+>
+> **Update 2026-09-28.** For prioritization, this digest is superseded by the
+> [second-pass landscape](../landscape.md), which scores about 50 entities on one scorecard and
+> ranks the next round in tiers.
 
 ## What Glass is
 

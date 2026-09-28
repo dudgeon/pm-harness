@@ -15,6 +15,10 @@
 > fifteen talks and interviews, the screenshots inside the launch articles, job postings, and a
 > frame-by-frame read of the product-shaping skill. See [What changed in v2](#what-changed-in-v2).
 >
+> **Round 3 (2026-09-28)** added [outside views](#outside-views-round-3): the most informed outside
+> takes, the main critiques, and a comparison with vendor coworker apps. It also added a few new facts
+> (S87–S94).
+>
 > This is the closest analog to a PM harness in Ramp's stack. Two parts:
 > - **Part A:** Glass as a platform for every employee.
 > - **Part B:** Glass as the PM's tool for the **define** step, where it produces "the next contract."
@@ -155,7 +159,7 @@ slide-maker skill "competes with at least two to three others" (S16, S2).
 | GA40 | **An approval queue.** Proposed memories wait as "pending," with Approve and Dismiss buttons. They stay in a pending folder until approved | observed | S78 |
 | GA41 | **Memory categories:** People, Active Work, Capabilities, Preferences, Organization. "Active Work" works as a register of the user's projects, inferred from their tools | observed; inferred | S78 |
 | GA42 | **Team memory and a per-user voice file.** It learns how each user writes, building "context on you, context on the team" | said | S65 |
-| GA43 | **Projects:** memory scoped to a project that persists across chat sessions | said | S54 (@shanebuchan, 2026-05-06) |
+| GA43 | **Projects:** memory scoped to a project that persists across chat sessions. A project picker appears before the first prompt | said; observed | S54 (@shanebuchan, 2026-05-06); S87 |
 
 #### A4. Automations
 
@@ -180,8 +184,9 @@ requests" automations (S78).
 | GA27 | The layout persists across sessions | said | S2 |
 | GA28 | Personalization. One PM named her Glass "Herbert," and it now has a personality | said | S16 |
 | GA29 | Direction: "every feature is a conversation." The UI becomes "a reference, not a requirement," and Glass can modify itself | said (as direction) | S15 |
-| GA46 | **Model choice.** "You can select which model you want… Claude… Gemini or OpenAI." The composer shows the model (Opus 4.6 by default), an auto-accept toggle, and how much context is used | said; observed | S66, S78 |
+| GA46 | **Model choice.** "You can select which model you want… Claude… Gemini or OpenAI." The composer shows the model (Opus 4.6 by default in April, Opus 4.7 by May), an auto-accept toggle, and how much context is used | said; observed | S66, S78, S87 |
 | GA47 | Work alongside markdown files and simple PDFs, "similar to Cowork" | said | S16 |
+| GA49 | **The agent can drive Glass's own interface.** In a demo, it used an internal tool to open seven parallel sessions in a grid, each a full chat with its tool calls visible. That realizes GA29's direction and fits GB18's parallel variants | observed | S87 |
 
 #### A6. Build and deploy
 
@@ -199,7 +204,9 @@ requests" automations (S78).
   folder name in one screenshot suggests it began as a "Claude desktop" wrapper (S78).
 - **Local by design.** "We don't monitor anything in Glass. We let everything run locally on
   people's computers" (S16). Local agents **take on the user's identity** in systems such as
-  Snowflake. Ramp's data-platform lead wants "a stiffer guardrail" there (S66).
+  Snowflake. Ramp's data-platform lead wants "a stiffer guardrail" there (S66). Traces aren't
+  absent everywhere: Ramp evaluates its research harness from traces across interfaces (including a
+  "coworker") and models (S88).
 - **Connections.** MCP servers are configured centrally, authenticated through Okta SSO, and held
   open one connection per service (S15). Per-tool permission modes sit on top (GA32).
 - **Skills.** Dojo is a Git repo of markdown skills, and Glass hides Git from authors (S15). The
@@ -232,6 +239,7 @@ requests" automations (S78).
 | **Notion**, with 300+ Notion agents | Everyone | The record: roadmap, specs, research, feedback triage | S1, S32, S68 |
 | **Slack agents** | Everyone | VOTC, Gadget, Inspect mentions, team bots | S1, S17 |
 | **Ramp Revenue** | GTM teams (">90%") | Background GTM work: inboxes, prospecting, CRM updates | S80 (@ParthGujare_, 2026-07-24) |
+| **Design's own agents** | Designers | A research-plan partner that also coaches interviewers; per-designer Slack bots that build v1 prototypes from meeting notes; a prototype playground anyone can fork; Inspect for changes through code review | S54 (@diegozaks, 2026-06-05) |
 
 ---
 
@@ -412,13 +420,15 @@ toward Glass, and the prototype moved into Inspect.
 | Jun 2026 | "Provider agnostic"; "more than 1,000 people" more productive | S66 |
 | 2026-08-06 | "The home base for our non-technical folks" | S27 |
 | 2026-09-10 | The CPO presents Glass as the agent for define | S1 |
-| 2026-09-27 | No open Glass or internal-AI roles. Glass's originator works in a vendor desktop app | S76, S77 |
+| 2026-09-16 | Outside Ramp: Anthropic folds Cowork into Claude, which now offers cloud runs, device-free schedules, org plugin marketplaces, OpenTelemetry, and a Compliance API | S90 |
+| 2026-09 | Glass's creator is building Kay, a commercial successor with a stricter consent model ("the agent can propose, but only a human can grant") | S89 |
+| 2026-09-27 | No open Glass or internal-AI roles. Glass's originator works in a vendor desktop app. No Ramp X account in our harvest has mentioned Glass since 2026-06-04, apart from the CPO's talk | S76, S77, S54 |
 
 ## Contradictions and tensions
 
 | Topic | One source says | Another says | Likely reading |
 |---|---|---|---|
-| Monitoring | "We don't monitor anything in Glass" (S16) | Spend per skill is tracked (S65), and there's a company-wide token tracker and leaderboards (S14, S17) | Aggregate metering, not session content. Unconfirmed |
+| Monitoring | "We don't monitor anything in Glass" (S16) | Spend per skill is tracked (S65); there's a company-wide token tracker and leaderboards (S14, S17); Glass's lead describes surfacing failed sessions for human-approved fixes (S54, @sebgoddijn, 2026-04-15); the research harness is evaluated from traces (S88) | Aggregate metering plus trace-based evaluation of specific harnesses, not monitoring of everyday sessions. Unconfirmed |
 | Model | Claude Agent SDK (S14); "still Claude Code under the hood" (S65) | "Provider agnostic… Gemini or OpenAI" (S66); "a harness for Claude or any LLM" (S61) | A Claude-based harness with a model picker (inferred) |
 | Identity | Okta sign-in to Glass (S2, S15) | 2,000 employees log in to Claude's apps with managed connectors (S75) | Either Glass rides on Claude's enterprise auth, or the two run side by side. Bears on Q-016 |
 | Build team and time | "A team of four built it in under three months" (S14) | "About a month" (S54, @shanebuchan); a core three (S15); six credited (S2) | Different start points |
@@ -432,13 +442,66 @@ toward Glass, and the prototype moved into Inspect.
 
 - Who has owned Glass since June 2026, and is it still growing?
 - Is Glass converging with Claude's own apps (enterprise auth, Cowork), or staying separate (S75)?
-  This bears on Q-016.
+  Since 2026-09-16, Claude offers most of Glass's shell as a vendor product (S90). This bears on
+  Q-016.
+- What did Glass's originator say at dbt Summit, and its creator at Floodgate and Fintech Nerdcon?
+  No recordings yet (S94).
 - What's in Dojo's Product and Design kits? Is the product-shaping skill one of them?
 - What share of PM define work happens in Glass, in Claude Code, and in Inspect?
 - How does a define session hand off to Inspect: through the connector, a session link, or a PR?
 - Glass keeps sessions local and unmonitored, yet spend per skill is tracked. What exactly is
   collected?
 - What does it cost per user?
+
+## Outside views (round 3)
+
+**Nobody outside Ramp has done a deep teardown of Glass.** Major newsletters and the business press
+have nothing substantive, and Hacker News has one comment. The informed outside material comes from
+three places: Glass's former builders, Ramp people writing about nearby systems, and a few analysts
+and competitors.
+
+### The most informed takes
+
+| Who | Vantage point | What they add | Source |
+|---|---|---|---|
+| Glass's creator, now building Kay | Built it; left in June | On build versus buy: "So far trade-off is in our favor, will see if that continues." A four-step improvement loop that surfaces failed sessions for human-approved fixes. A turn to model agnosticism, and a stricter consent model in his new product | S54 (@sebgoddijn, 2026-04-10, 04-15); S89 |
+| Glass's originator | Started it | Internal tools now get built and maintained "faster than procurement". His own daily driver is a vendor desktop app | S77 |
+| A Glass engineer | Built it | Single sign-on for every connector was the big adoption unlock. The Projects demo (GA43, GA49) | S54 (@shanebuchan, 2026-04-15); S87 |
+| Ramp's VP Data | Runs a nearby system | Evaluates the research harness from traces across interfaces and models | S88 |
+| Ramp's head of design | Runs a nearby system | Design's shaping agents sit outside Glass (see "Where Glass sits") | S54 (@diegozaks, 2026-06-05) |
+| An operator-advisor (ForgeVista) | Close reading | A company must own this layer but needn't build it. Agent identity needs its own governance. Memory should graduate from person to company through review | S92 |
+| A VC and former product leader | Reaction | Most companies can't build their own; "the collaboration surface remains an issue" | S92 |
+
+### The main critiques
+
+- **Hard to replicate.** Outsiders doubt most companies have the engineering to build this. Ramp's
+  reply is that the team was tiny.
+- **Single-player by design.** Glass is a private desktop app, so collaboration and the shared
+  record live elsewhere. Competing designs make work visible instead: Indent's sessions are visible
+  to the whole org by default, and HQ syncs shared files (S93).
+- **No observability on everyday use.** Skill owners get no feedback (S16). Vendors now ship this:
+  Claude has OpenTelemetry events and a Compliance API (S90).
+- **Unanswered control questions.** Reply threads under the launch posts asked about personal data
+  sent to models, write access through connectors, agent identity, and offboarding. Ramp never
+  answered them in public. OpenAI's own docs now warn that shared agents on personal connections act
+  "as the creator" (S91).
+- **Shared skills cut both ways.** They spread what works, but they can also flatten useful variation
+  between people. Glass allows "fire at will" creation; its creator's new product requires a
+  person's approval before a skill loads (S89).
+- **The build case is weaker than it was in April.** By late September Claude offers most of Glass's
+  shell as a vendor product (S90). Inferred: what stays uniquely valuable at Ramp is the Ramp-specific
+  context (connectors, the research bundle, Dojo's content), not the app.
+
+### Glass compared with vendor coworker apps (late September 2026)
+
+| | Glass (Ramp, internal) | Claude with Cowork (S90) | OpenAI workspace agents and Codex (S91) | Kay (Glass's creator, S89) |
+|---|---|---|---|---|
+| Where it runs | Local desktop app; jobs from the laptop | Cloud sessions or a local VM; schedules run with no device online | In ChatGPT, Slack, on schedules, or by API | Local desktop app; hosted inference |
+| Models | Claude by default, with a picker | Claude | OpenAI | Routed automatically; open-weight or your own keys |
+| Connectors | 30+ behind Okta, per-tool Auto/Allow/Ask | Identity-provider-managed connector auth; admins can block always-allow for write tools | Apps and custom MCP servers, admin-enabled | Its own plugins; no MCP yet |
+| Skills | Dojo: Git-backed, reviewed on publish, 12 function kits | Org plugin marketplaces, including a "Required" state | Skills and role plugins | SKILL.md from approved sources only |
+| Memory | Per-user synthesis with an approval queue; team and project memory | Projects with memory; memory shared across chat and cloud sessions | Per-agent files and memory | From onboarding and connected tools |
+| Traces | None centrally for everyday sessions | OpenTelemetry events; Compliance API | Admin views of agents and activity | Usage telemetry on by default |
 
 ## Through our lens (goal 004, R3)
 
@@ -447,7 +510,7 @@ toward Glass, and the prototype moved into Inspect.
 | First move | Removing setup friction for everyone, **not** a PM move. PM moves came later, as a Product kit and the define framing |
 | Deployment model | **Local and per-person**, pushed to every managed laptop. **Procedural context is shared** (Dojo), **connectors are configured centrally**, and shared apps live on Ramplify |
 | Context approach | Federated reads over MCP. Per-user memory behind a **human approval queue**, plus team and per-project memory. Shared skills, some installed by connectors |
-| Traces | **None captured centrally, by design.** Spend per skill is metered. Skill owners get no feedback on quality (S16) |
+| Traces | **None captured centrally for everyday sessions, by design.** Spend per skill is metered. Skill owners get no feedback on quality (S16). Ramp does evaluate specific harnesses from traces (S88) |
 | Controls | SSO and each person's own permissions; per-tool Auto/Allow/Ask; skills reviewed like code when published; phone approvals for headless runs; memory the user approves. Gap: local agents inherit the user's identity (S66) |
 | PM moves ([pm-moves](../../../../context/wiki/pm-moves.md)) | Framing and shaping intent into a spec (3), solution identification through prototypes (2), and the handoff to delivery (Q-008) |
 | Delegation ([levels](../../../../context/wiki/path.md#delegation-levels)) | **L2**: the agent researches, drafts, and prototypes; the PM frames, chooses, and decides |

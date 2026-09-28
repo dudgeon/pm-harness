@@ -2,7 +2,7 @@
 
 # Tasks rollup
 
-_Last rolled up: 2026-09-27_
+_Last rolled up: 2026-09-28_
 
 ## 004 · Beacon teardowns (active)
 
@@ -11,15 +11,26 @@ _Last rolled up: 2026-09-27_
 - [x] Transcribe and digest the Ramp CPO's talk (captions plus slides from the video) →004-D2 src:[talk digest](context/inbox/_processed/2026-09-27-ramp-cpo-talk.md)
 - [x] Deep teardown, Ramp v1: a vision plus eight PRDs (Glass, VOTC, Ramp Research, Inspect, Review Buddy, Testo, Gadget, the autonomous loop) →004-D2 src:[teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md)
 - [x] Ramp round 2: go deep on Glass and test Geoff's hypothesis that Glass is where most intent shaping happens (verdict: partly supported). X timelines, about fifteen talks and interviews, job postings, screenshots, and a frame-by-frame read of the product-shaping skill; Glass PRD v2 →004-D2 src:[intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md)
-- [ ] Review the Ramp teardown with Geoff. Are this fidelity and format right for the other beacons? @Geoff →004-D2
+- [x] Ramp round 3: outside views of Glass, and a comparison with vendor coworker apps →004-D2 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md#outside-views-round-3)
+- [x] Second-pass landscape: seven research passes in parallel (including Box and Lenny's ecosystem), one scorecard, the gaps no beacon fills, and a tiered plan for the next round →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [x] Verify and profile the companies in the earlier research note's scorecard. Done in the second pass; most claims held, and the corrections are in the local notes →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [x] Profile the beacons the scan noted but didn't profile. Done in the second pass (Productboard Spark, bank programs, and more) →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [x] Deep teardown: LinkedIn. Superseded 2026-09-28: now a tier 3 profile →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [x] Deep teardown: Citi. Superseded 2026-09-28: verify its claims only →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [x] Deep teardown: Atlassian. Superseded 2026-09-28: now a tier 3 profile →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [x] Deep teardown: AWS. Superseded 2026-09-28 by the tier 1 task for AI-DLC 2.x with Kiro →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Review the Ramp teardown and the second-pass landscape with Geoff. Are the fidelity, the format, and the tiers right? @Geoff →004-D2
+- [ ] Tier 1 teardown: Coinbase (Forge; Sail and its risk tiers; Tracer Bullet with its plan-drafting skill and agent verification; Mux; design-system tooling for agents; the enterprise agent platform and its compliance agents) →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Tier 1 teardown: Uber (the research-to-PR flow; the PRD Evaluator; Minion; code review and the code inbox; the skills marketplace and context graph; maintenance loops; ADR and agent identity; Agentic Pods) →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Tier 1 teardown: AWS AI-DLC 2.x with Kiro. Read the open-source engine, plus Kiro's spec mode, requirements analysis, and correctness checks →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Tier 2 focused teardowns: Cloudflare, Stripe, Singapore GovTech, Productboard Spark, and Meta (the Organizational Second Brain only). Spec Kit gets a hands-on trial in goal 001 instead →004-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Tier 3 profiles, one page each: Shopify, Block, Atlassian, LinkedIn, Monzo, Lloyds, UK government standards, Box, BMAD v6, Linear, Notion, Commonwealth Bank, DoorDash, and Spotify →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Verify only: Citi's claims (the investor-day transcript, and the Forbes piece once captured). Follow up the RBC lead →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Capture the pages our tools can't read, from a normal browser, into the local inbox: Coinbase's blocked engineering posts, Commonwealth Bank's Project Coral post, the Forbes piece on Citi, DoorDash's Flux post, and an Atlassian product leader's Medium post @Geoff →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
+- [ ] Monthly watch: Box's CEO on X, the Lenny & Friends Summit playlist, the Kiro, AI-DLC, and Spec Kit changelogs, and talks by Glass's creator (Floodgate, Fintech Nerdcon) →004-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md)
 - [ ] Close the open questions in the Ramp PRDs as new public material appears. Examples: what "automatically handled" means, Testo's data handling, who owns Glass now, what platform Gadget runs on, what's in Dojo's Product kit, and whether Glass converges with Claude's own apps. Also watch for a recording of Ramp's design-tooling demo (S83) →004-D2 src:[teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md)
 - [ ] If Geoff has access, read the paywalled Pragmatic Engineer piece on Inspect (S19). The product-shaping skill no longer needs the paywalled post: it was read in full from the video frames (S55) @Geoff →004-D2
-- [ ] Verify and profile the companies in the earlier research note's scorecard, regulated ones first: Coinbase Wallet (a plan contract with acceptance criteria) and Monzo (Agent Chip). Then Stripe (the note has a detailed section to check), Shopify, Block, Spotify, Uber, OpenAI's harness team, Cloudflare, and AWS AI-DLC →004-D1 src:[earlier research note](context/inbox/_processed/2026-09-20-pm-idea-to-code-stripe-ramp.md)
-- [ ] Deep teardown: LinkedIn (Full Stack Builder agents, CAPT) →004-D2
-- [ ] Deep teardown: Citi (Arc). Verify the weakly sourced claims first →004-D2
-- [ ] Deep teardown: AWS (AI-DLC, Kiro) →004-D2
-- [ ] Deep teardown: Atlassian (Rovo, Teamwork Graph) →004-D2
-- [ ] Profile the beacons the scan noted but didn't profile (Productboard Spark, Morgan Stanley's DevGen.AI, other banks' agent programs, and the rest of its gaps list) →004-D1
+- [ ] Get the agent access to Lenny's Newsletter (the paid archive, including the community-discussion summaries) and to the Lenny's community Slack. Then mine them for beacon evidence. Check the terms first. The official dataset (Lenny's Data) is licensed for personal, non-commercial use, and the paid archive can't be redistributed, so ask Lenny's team before using it beyond personal research. Keep Slack-derived notes local and summarized, never quoted in the public repo. The [landscape](goals/004-beacon-teardowns/landscape.md) lists what to read first @Geoff →004-D1
 - [ ] Synthesize what transfers to a regulated enterprise →004-D3
 
 ## 001 · Harness design R&D (draft)
@@ -37,6 +48,8 @@ _Last rolled up: 2026-09-27_
 - [ ] Consider Glass as a worked example of the hybrid stop (local, with shared skills), including its gaps: memory stays per-user, and no traces are captured centrally (H-009) →001-D1 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
 - [ ] Consider Ramp's intent-shaping relay (discovery in VOTC, framing in Glass or Claude Code with a portable skill, the prototype in Inspect, the record in Notion) when deciding where our harness holds the brief. Ramp hasn't given the brief a governed home (Q-016, H-002) →001-D1 src:[intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md) from:004
 - [ ] Consider Glass's control surface as a design input: per-tool Auto/Allow/Ask modes, a memory approval queue, and the gap Ramp names itself (local agents inherit the user's identity) (Q-014) →001-D1 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
+- [ ] Consider the converged intent-definition baseline as what the harness must meet: a plan step before build, one-at-a-time clarifying questions with a recommended answer, a dated question-and-answer log in the spec, stable requirement IDs, machine-checkable acceptance criteria, and verification against the spec. Consider the gaps no beacon fills as where it could stand out (H-014) →001-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md) from:004
+- [ ] Consider a hands-on trial of AWS AI-DLC 2.x or GitHub Spec Kit inside Claude Code (C1) as a cheap first experiment for the shaping moves →001-D2 src:[landscape](goals/004-beacon-teardowns/landscape.md) from:004
 
 ## 002 · Evolve project-scaffold-v1 (draft)
 
@@ -58,6 +71,7 @@ _Last rolled up: 2026-09-27_
 - [ ] Consider Ramp's five-step loop (identify, define, build, coordinate, improve) as an outside breakdown of PM moves. It makes coordination (status, Q&A, launch communications) a step of its own, and treats acceptance testing as something to automate →003-D1 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
 - [ ] Consider Ramp's "next contract" for the shaping and handoff moves (Q-008): evidence, requirements written for agents (in a human version and an agent version), and a working prototype. Also consider its conversational product-shaping skill. Its full structure is now in the Glass PRD, part B: seven framing questions, a one-sentence gate, research streams the PM picks, an evidence bar, requirement IDs, closed questions, and a seven-section spec →003-D2 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
 - [ ] Consider Ramp Labs' bottom-up method (traces split into work items with one objective and one outcome each, then clustered into 30 categories) as a way to derive moves from observed work (Q-004) →003-D1 src:[Ramp sources](goals/004-beacon-teardowns/teardowns/ramp/sources.md) from:004
+- [ ] Consider the outside move definitions from the second pass: critiquing a spec (Uber's PRD Evaluator, LinkedIn's per-craft critique agents), deciding (Spec Kit's go, needs-clarification, or kill; Claire Vo's probe, experiment, or promise), and defining AI features by evals →003-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md) from:004
 
 ## 005 · Effort and delegation baseline (draft)
 
@@ -69,6 +83,7 @@ _Last rolled up: 2026-09-27_
 - [ ] Consider Ramp's self-reported step measures: 85% of PM questions answered by AI, 60% of UX issues fixed within 24 hours, "fewest human touches per safely merged PR," and the share of PRs from agents and from non-engineers. Also note how its metric definitions drift →005-D3 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
 - [ ] Consider Ramp's L0–L3 AI-proficiency levels and usage leaderboard as a fluency measure, and why a mandated leaderboard fails our earned-adoption test (C6, Q-013) →005-D3 src:[Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md) from:004
 - [ ] Consider Glass's adoption telemetry (weekly users, sessions, and "user actions"; spend per skill) and Ramp Labs' attribution of spend to work items as measurement designs (Q-010, H-005) →005-D3 src:[Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md) from:004
+- [ ] Consider new measurement designs: Uber's approval-fatigue finding (oversight becomes a rubber stamp past about 50 approvals a session), Coinbase's PR lineage used to evaluate prompt efficacy and defect rates, a residual-human-edit metric (Every), and Atlassian's AI Fluency Index (six capabilities at five levels, "not a ladder") →005-D3 src:[landscape](goals/004-beacon-teardowns/landscape.md) from:004
 
 ## 006 · Context ecosystem and data structure (draft)
 
@@ -86,16 +101,18 @@ _Last rolled up: 2026-09-27_
 - [ ] Consider LinkedIn's write-back of learnings into InfoSec-reviewed playbooks as a working context-building loop →006-D1 src:[beacon scan](context/inbox/_processed/2026-09-27-beacon-scan.md) from:004
 - [ ] Consider what running this project on the scaffold teaches about Q-015 →006-D2 src:[friction log](goals/002-project-scaffold/context/friction.md) from:002
 - [ ] Consider skill sprawl when designing curation. Glass reached about 800 overlapping skills in three months, and Ramp's own ablation on another product found most skills neutral or harmful →006-D1 src:[Ramp sources](goals/004-beacon-teardowns/teardowns/ramp/sources.md) from:004
+- [ ] Consider two governed-context designs: Cloudflare's standards (named owners, stable IDs, a lifecycle from approved to enforced, now including compliance) and Meta's Organizational Second Brain (expert corrections become reviewed diffs to knowledge files, each added to a regression suite) →006-D1 src:[landscape](goals/004-beacon-teardowns/landscape.md) from:004
+- [ ] Add the regulated control patterns from the second pass to the controls map: risk tiers along four axes (review depth, agent permissions by domain, autonomy by system criticality, tool risk at procurement), agent registries with named owners, markers on AI-assisted changes, sandboxes behind one egress proxy, and golden sets as behaviour specs →006-D3 src:[landscape](goals/004-beacon-teardowns/landscape.md) from:004
 
 ## Summary
 
 | Goal | Status | Open | Done |
 |---|---|---|---|
-| 004 · Beacon teardowns | active | 10 | 5 |
-| 001 · Harness design R&D | draft | 13 | 0 |
+| 004 · Beacon teardowns | active | 13 | 13 |
+| 001 · Harness design R&D | draft | 15 | 0 |
 | 002 · Evolve project-scaffold-v1 | draft | 6 | 1 |
-| 003 · PM moves taxonomy | draft | 8 | 0 |
-| 005 · Effort and delegation baseline | draft | 8 | 0 |
-| 006 · Context ecosystem and data structure | draft | 14 | 0 |
+| 003 · PM moves taxonomy | draft | 9 | 0 |
+| 005 · Effort and delegation baseline | draft | 9 | 0 |
+| 006 · Context ecosystem and data structure | draft | 16 | 0 |
 
 **Blocked tasks:** none.

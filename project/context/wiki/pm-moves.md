@@ -107,6 +107,16 @@ them before relying on them.
   Glass or Claude Code, the prototype in Inspect, the record in Notion
   ([intent-shaping](../../goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md)).
 
+- **Outside move definitions from the second pass** ([landscape](../../goals/004-beacon-teardowns/landscape.md), 2026-09-28):
+  - **Critique a spec.** Uber's PRD Evaluator sets its depth by risk, separates critical
+    requirements from optimizations, and returns write-ready fixes. LinkedIn runs a spec past
+    critique agents for each craft (trust, growth, research, analyst).
+  - **Decide.** Spec Kit's idea assessment ends in go, needs-clarification, or kill. Claire Vo
+    labels each commitment a probe, an experiment, or a promise.
+  - **Define AI features by evals**, not prose: Box, Block's Moneybot, Atlassian, Anthropic.
+  - **Clarify.** The tools have converged on one pattern: a plan step before build, then questions
+    one at a time with a recommended answer, logged with dates in the spec.
+
 ## Open
 
 - How big is a "move"?

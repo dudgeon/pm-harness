@@ -121,3 +121,40 @@ Append-only. One entry per `/ingest` or `/lint` run.
     and the brief's missing home
 - **Flagged, non-blocking:** Q-016. Ramp runs three general-purpose surfaces side by side (Glass,
   Inspect, and Claude's own apps), and their overlap isn't explained in public.
+
+## 2026-09-28: ingest (the second-pass landscape, and Glass round 3)
+- **Prompt.** Geoff asked for more informed takes on Glass, a survey of PM-focused agents and of
+  coding agents with intent-definition features, and profiles of companies touting agentic delivery
+  (Stripe, Block, Coinbase, Atlassian, Shopify, Meta, Uber, Airbnb, then Box). He also wanted a look
+  at Lenny's ecosystem. Then: flesh out goal 004 and prioritize the next round.
+- **Method.**
+  - Seven research passes in parallel, on public sources only.
+  - Each checked engineering blogs and the public posts of CEOs, CPOs, and CTOs (now R8).
+  - Their notes and transcripts stay local in `inbox/_local/research-2026-09-28/`.
+- **Produced:**
+  - The [second-pass landscape](../../goals/004-beacon-teardowns/landscape.md) (004-D1): about 50
+    entities on one scorecard, what the landscape says, the gaps no beacon fills, and a tiered plan.
+    Tier 1 is Coinbase, Uber, and AWS (AI-DLC with Kiro).
+  - Glass round 3: [outside views](../../goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md#outside-views-round-3)
+    and a comparison with vendor coworker apps. Sources S87–S94.
+- **Goal 004,** at Geoff's direction:
+  - tiered depth for teardowns
+  - R8 (blogs and executive posts), R9 (depth by tier), R10 (keep the enterprise generic)
+  - two open questions answered
+  - tasks rewritten around the tiers; the old deep-teardown tasks for LinkedIn, Citi, AWS, and
+    Atlassian superseded
+  - a task for Lenny's access, with a licensing caveat
+- **Questions.** Notes added to Q-008 (the converged spec contract), Q-009, Q-014 (regulated control
+  patterns), and Q-016 (the general coworker is becoming a commodity).
+- **Hypotheses.**
+  - Evidence added to H-005, H-007, H-008, H-009, H-011, and H-012.
+  - New H-014: the harness can stand out by closing the gaps the beacons leave, such as routing
+    questions to named experts, drawing compliance requirements from control owners, and tracing
+    requirements into production.
+- **Tasks.** `from:004` tasks added to goals 001 (2), 003 (1), 005 (1), and 006 (2).
+- **Wiki.**
+  - [pm-moves](pm-moves.md): outside definitions for critiquing a spec, deciding, clarifying, and
+    defining by evals
+  - [context-layer](context-layer.md): standards and expert knowledge as governed context
+- **Kept out of the repo on purpose (C5):** findings that point to one industry, such as one
+  country's regulator guidance, are summarized to Geoff privately instead.

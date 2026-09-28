@@ -168,6 +168,20 @@ Format:
 
     ([earlier research note](context/inbox/_processed/2026-09-20-pm-idea-to-code-stripe-ramp.md))
 
+  - 2026-09-28 (second pass): the tools have converged on a spec contract, and Ramp's is now the
+    outlier:
+    - a read-only plan step before build
+    - clarifying questions asked one at a time with a recommended answer, then logged with dates in
+      the spec; unanswered questions become recorded assumptions
+    - stable requirement IDs as trace keys
+    - machine-checkable acceptance criteria (EARS or Given/When/Then)
+    - verification against the spec; Kiro links property-based tests to requirements
+
+    Coinbase's plan contract is now confirmed first-party: a skill drafts it, simulator fleets verify
+    it "against your spec," and failures get fixed in the plan. Uber and Cloudflare review written
+    intent before build, but neither publicly wires that review into its build agents
+    ([landscape](goals/004-beacon-teardowns/landscape.md)).
+
 ### Q-009: What are the beacons doing on each axis, and what transfers to a regulated enterprise?
 - status: open
 - blocking: no
@@ -186,6 +200,12 @@ Format:
   - 2026-09-27: the first deep teardown, Ramp v1, is done: a product vision plus eight feature PRDs
     from the CPO's talk and 49 other public sources
     ([teardown](goals/004-beacon-teardowns/teardowns/ramp/index.md)).
+
+  - 2026-09-27 (Ramp rounds 2 and 3): Glass in depth. The hypothesis about intent shaping was
+    tested (partly supported), and outside views were added.
+  - 2026-09-28: the second-pass landscape scores about 50 entities across five kinds of beacon. It
+    ranks the next round in tiers, with Coinbase, Uber, and AWS (AI-DLC with Kiro) first
+    ([landscape](goals/004-beacon-teardowns/landscape.md)).
 
 ### Q-010: How will we measure progress?
 - status: open
@@ -319,6 +339,24 @@ Format:
     [Ramp sources](goals/004-beacon-teardowns/teardowns/ramp/sources.md),
     [earlier research note](context/inbox/_processed/2026-09-20-pm-idea-to-code-stripe-ramp.md))
 
+  - 2026-09-28 (second pass: regulated organizations across several industries):
+    - Humans approve every merge. Nobody publicly lets agents deploy.
+    - Risk tiers along four axes: review depth by change risk, agent permissions by domain, autonomy
+      by how critical the system is, and tool risk at procurement.
+    - Sandboxes behind a single egress proxy.
+    - Agents registered with their own identity and a named human owner.
+    - AI-assisted changes marked and traceable.
+    - Golden sets of expert-approved examples serve as behaviour specs for operations agents.
+    - Coding agents are governed as tools under SDLC controls, not validated as models. Agents that
+      act in operations get model-style validation: evals, golden sets, audit.
+    - Uber's traces show approval fatigue: past about 50 approvals a session, "human oversight
+      becomes a rubber stamp."
+    - **Still nobody publicly draws out feature-specific legal or compliance requirements into specs
+      or tests.** The closest are Cloudflare's owner-maintained standards, which now include
+      compliance, and Meta's compliance "second brain."
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
+
 ### Q-015: How opinionated should the underlying data structure be, and which entities should be recorded, shareable, and canonical?
 - status: open
 - blocking: no, but it's one of the stickiest choices on path axis 3, because schemas are hard to
@@ -368,6 +406,20 @@ Format:
     - Glass's lead left in June, and nobody has explained in public how the three surfaces overlap.
 
     ([intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md))
+
+  - 2026-09-28 (second pass): the leading factories pair many single-purpose agents with a shared
+    context layer and a general front door.
+    - Uber runs research, PRD-review, build, and review agents over one context graph and skills
+      marketplace, entered from Slack.
+    - Coinbase runs a Slack-native harness over Linear, its source of truth.
+    - Vendors now sell the general layer. Claude folded in Cowork on 2026-09-16, with org plugin
+      marketplaces, and OpenAI offers workspace agents.
+    - Box's CEO says a shared agent must be "like any other user in the system," with its own
+      identity.
+
+    The general coworker is becoming a commodity. What's distinctive is the context, and the
+    single-purpose agents built on it (H-009)
+    ([landscape](goals/004-beacon-teardowns/landscape.md)).
 
 ## Resolved
 

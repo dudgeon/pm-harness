@@ -334,6 +334,15 @@ Format:
       move.
 
     ([Ramp sources](goals/004-beacon-teardowns/teardowns/ramp/sources.md), S53)
+  - 2026-09-28 (for, med: first-party, second pass):
+    - Uber's ADR captures prompt, reasoning, tool call, and outcome across its agent clients, at
+      50k+ sessions a day. Its finding: past about 50 approvals a session, oversight becomes a rubber
+      stamp. That's traces used to redesign the human's role.
+    - Coinbase recorded each PR's prompt, rules, and share of AI-written code, and used the data to
+      evaluate prompt efficacy and defect rates.
+    - Devin's Session Insights flags scope ambiguity in past sessions and returns improved prompts.
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
 - decisions resting on it: (none yet)
 
 ### H-006: The harness shifts human effort toward judgment work
@@ -400,6 +409,17 @@ Format:
 
     ([Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md),
     [Glass](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md))
+  - 2026-09-28 (for, med: first-party, second pass):
+    - Meta's Organizational Second Brain turns expert corrections into reviewed diffs to its
+      knowledge files, and each one joins a regression suite.
+    - Shopify's River went from a 36% to a 77% merge rate because people wrote down what it lacked,
+      not because models changed.
+    - Box runs a weekly review of unresolved requests, which feeds human-reviewed fixes to its IT
+      assistant's knowledge.
+    - AWS AI-DLC's "learnings ritual" saves lessons to team or project memory after checking them
+      against org rules.
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
 - decisions resting on it: DEC-011
 
 ### H-008: PM, design, and engineering converge into "builders"
@@ -428,6 +448,18 @@ Format:
 
     ([intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md),
     [Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md))
+  - 2026-09-28 (mixed, second pass):
+    - For:
+      - Coinbase's CEO announced "one person teams" that combine engineer, designer, and PM.
+      - Uber's Agentic Pods pair engineers with domain experts, with no PM named.
+      - Anthropic's 30–40 PMs nearly all code.
+      - LinkedIn renamed its APM program "Associate Product Builder."
+    - Qualifiers:
+      - Atlassian lets PMs commit code only where the codebase's risk allows.
+      - Box's CEO expects PMs to survive as customer-facing specialists.
+      - Salesforce says it has no clear answers yet on PM and designer roles.
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
 - decisions resting on it: DEC-007 (who the later users are)
 
 ### H-009: Context and traces are the path-dependent assets; the runtime isn't
@@ -462,6 +494,14 @@ Format:
       into Claude's own apps.
 
     ([intent-shaping](goals/004-beacon-teardowns/teardowns/ramp/intent-shaping.md))
+  - 2026-09-28 (for, med: second pass):
+    - Skills became portable across hosts. Spec Kit, BMAD, and AI-DLC each install into several
+      agents.
+    - The shell is becoming a commodity. Since 2026-09-16, Claude offers most of Glass's features as
+      a vendor product, and Glass's creator is building a model-agnostic successor.
+    - Shopify's gains came from context, not models (River's merge rate).
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md); [Glass PRD](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md#outside-views-round-3))
 - decisions resting on it: (none yet)
 
 ### H-010: Moves that generate context make the best first tasks
@@ -511,6 +551,12 @@ Format:
 
     ([Glass](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md),
     [Ramp vision](goals/004-beacon-teardowns/teardowns/ramp/vision.md))
+  - 2026-09-28 (for, weak: press reports plus first-party):
+    - Meta and Amazon rolled back usage leaderboards, according to press reports.
+    - Uber found that sharing wins beat directives.
+    - Box uses its per-person token list to find practices worth teaching, not to rank people.
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
 - decisions resting on it: (none yet)
 
 ### H-012: In a regulated enterprise, context with provenance and traces double as control evidence
@@ -542,6 +588,16 @@ Format:
     Ramp uses this for quality, not control. Glass shows the gap: local agents inherit the user's
     identity, and nothing is traced centrally
     ([Glass](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md)).
+  - 2026-09-28 (for, med: second pass):
+    - The UK Home Office requires AI-assisted changes to be marked and traceable.
+    - AWS AI-DLC tags every claim with its source, treats requirement IDs as permanent trace keys,
+      and keeps a 105-event audit trail.
+    - Cloudflare's standards carry stable IDs and a lifecycle from approved to enforced. Its AI
+      reviewer enforces them on every merge request.
+    - Singapore GovTech's CTO frames the audit questions a spec-first regime must answer: who wrote
+      the specification, and who approved the agent's reading of it?
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
 - decisions resting on it: (none yet)
 
 ### H-013: An opinionated structure costs users little if the agent maintains it
@@ -570,3 +626,32 @@ Format:
 
     ([Glass](goals/004-beacon-teardowns/teardowns/ramp/prd-glass.md))
 - decisions resting on it: (none yet)
+
+### H-014: The harness can stand out by closing the gaps the beacons leave
+- status: untested
+- raised: 2026-09-28 · by: agent (synthesis of the second-pass landscape)
+- claim: The beacons have converged on a baseline for intent definition that a PM harness must
+  meet: a plan step before build, structured clarifying questions, answers logged in the spec,
+  requirement IDs, and machine-checkable acceptance criteria. The harness's distinctive value would
+  come from what no beacon does in public:
+  - routing open questions to named experts, and keeping each answer with who gave it and their
+    authority to decide
+  - drawing legal and compliance requirements from the control owners into the spec and its tests
+  - tracing requirements through tests into production
+  - keeping discovery evidence linked to the spec as new evidence arrives
+  - shaping intent with several people over time, with explicit decision rights
+- test:
+  - Keep checking each new teardown for anyone doing these (goal 004).
+  - In a pilot, compare shaped specs with and without expert routing. Measure rework caused by late
+    expert or compliance input, and how often banked answers get reused.
+- evidence:
+  - 2026-09-28 (for, med): the second-pass landscape found no public example of the first two across
+    about 50 entities. The closest are:
+    - Meta's compliance "second brain"
+    - Cloudflare's owner-maintained standards
+    - AWS AI-DLC's stakeholder map and compliance agent
+    - Anthropic's PM plugin, which tags questions by who should answer them but doesn't route them
+
+    ([landscape](goals/004-beacon-teardowns/landscape.md))
+- decisions resting on it: (none yet)
+
