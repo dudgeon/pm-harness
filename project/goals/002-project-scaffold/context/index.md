@@ -3,4 +3,6 @@
 Context specific to this goal, filed by `/ingest`. Anything useful across goals belongs in
 `project/context/wiki/` instead.
 
-_(no pages yet)_
+| Page | What it covers |
+|---|---|
+| [friction](friction.md) | Log of `scaffold-friction` notes, and what each might imply for the harness |
